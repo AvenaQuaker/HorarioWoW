@@ -195,16 +195,16 @@ function obtenerRecrusos(Tipo) {
             Recursos.GIF = "./Resources/ZG.gif";
             break;
         case "SE":
-            Recursos.Fondo = "./Resources/SE.JPG"
+            Recursos.Fondo = "./Resources/SE.jpg"
             Recursos.GIF = "./Resources/SE.gif";
             break;
         case "AQ20":
-            Recursos.Fondo = "./Resources/AQ20.JPG"
-            Recursos.GIF = "./Resources/AQ20.PNG";
+            Recursos.Fondo = "./Resources/AQ20.jpg"
+            Recursos.GIF = "./Resources/AQ20.png";
             break;
         case "AQ40":
-            Recursos.Fondo = "./Resources/AQ40.JPG"
-            Recursos.GIF = "./Resources/AQ401.JPG";
+            Recursos.Fondo = "./Resources/AQ40.jpg"
+            Recursos.GIF = "./Resources/AQ401.jpg";
             break;
         default:
             Recursos.Fondo = "./Resources/VariadoBG.png";
