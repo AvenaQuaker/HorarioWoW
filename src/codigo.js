@@ -173,6 +173,7 @@ function obtenerRecrusos(Tipo) {
         GIF: "",
     };
 
+    console.log(Tipo)
     switch (Tipo) {
         case "ONIXIA":
             Recursos.Fondo = "./Resources/Onixia.webp"
@@ -205,6 +206,10 @@ function obtenerRecrusos(Tipo) {
         case "AQ40":
             Recursos.Fondo = "./Resources/AQ40.jpg"
             Recursos.GIF = "./Resources/AQ401.jpg";
+            break;
+        case "Naxx":
+            Recursos.Fondo = "./Resources/Naxx.jpg"
+            Recursos.GIF = "./Resources/Naxx.gif";
             break;
         default:
             Recursos.Fondo = "./Resources/VariadoBG.png";
