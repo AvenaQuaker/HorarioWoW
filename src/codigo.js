@@ -51,19 +51,15 @@ eventador.querySelector("button").addEventListener("click", (e) => {
     let mensaje = document.getElementById("msg").value;
     let variado = document.getElementById("eventoVariado").value;
 
-    let objeto;
-    if (variado == "") {
-        objeto = {
-            Tipo: variado,
-            Duracion: duracion,
-            Mensaje: mensaje,
-        };
-    } else {
-        objeto = {
+    let objeto = {
             Tipo: tipo,
+            perso: "",
             Duracion: duracion,
             Mensaje: mensaje,
-        };
+    };
+
+    if (variado != ""){
+        objeto.perso = variado
     }
 
     let celda = celdaActual;
@@ -183,7 +179,7 @@ function obtenerRecrusos(Tipo) {
             Recursos.Fondo = "./Resources/MC.jpg"
             Recursos.GIF = "./Resources/MC.gif";
             break;
-        case "KARA":
+        case "KARA10":
             Recursos.Fondo = "./Resources/Kara.jpg"
             Recursos.GIF = "./Resources/Kara.gif";
             break;
@@ -210,6 +206,14 @@ function obtenerRecrusos(Tipo) {
         case "Naxx":
             Recursos.Fondo = "./Resources/Naxx.jpg"
             Recursos.GIF = "./Resources/Naxx.gif";
+            break;
+        case "TBH":
+            Recursos.Fondo = "./Resources/TBH1.webp"
+            Recursos.GIF = "./Resources/TBH2.webp";
+            break;
+        case "KARA40":
+            Recursos.Fondo = "./Resources/UPK1.webp"
+            Recursos.GIF = "./Resources/UPK2.jpg";
             break;
         default:
             Recursos.Fondo = "./Resources/VariadoBG.png";
